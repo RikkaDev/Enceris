@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Chapter 1 — My Novel</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header class="chapter-header">
+    <a class="home-link" href="../index.html">← Home</a>
+    <h1>Chapter 1 — Chapter Title</h1>
+    <p class="byline">Optional short subtitle or scene note</p>
+  </header>
+
+  <main class="chapter">
+    <article>
+      <p>First paragraph of chapter 1. Start writing your scene here. You can paste the chapter text directly into this file.</p>
+
+      <p>Second paragraph — keep each paragraph in its own &lt;p&gt; for clear styling and copy/paste editing.</p>
+
+      <!-- navigation at end of chapter -->
+      <nav class="chapter-nav-bottom">
+        <!-- once you have chapter-02, change the href -->
+        <a href="chapter-02.html">Next →</a>
+      </nav>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Your Name</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

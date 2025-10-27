@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Home</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="A simple site for hosting my novel." />
+  <link rel="icon" href="assets/favicon.ico" />
+</head>
+<body>
+  <header class="site-header">
+    <h1 class="title">Enceris</h1>
+    <p class="subtitle">Story of Theo Baine</p>
+    <nav class="chapter-nav">
+      <a href="chapters/chapter-01.html">Chapter 1</a>
+      <!-- add more chapter links here -->
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="content">
+    <section>
+      <h2>Start reading</h2>
+      <p>Welcome! This site will host my novel, chapter-by-chapter. Click a chapter above to begin.</p>
+    </section>
+
+    <section class="latest">
+      <h3>Latest update</h3>
+      <p>Chapter 1 published — <time datetime="2025-10-26">October 26, 2025</time></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> KAKUTAI </p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

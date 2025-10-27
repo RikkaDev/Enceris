@@ -1,0 +1,60 @@
+/* Basic readable layout for a novel site — edit freely */
+:root{
+  --max-width: 720px;
+  --page-padding: 2rem;
+  --accent: #6b5fdb;
+  --muted: #666;
+  --bg: #fbfaf7;
+  --text: #222;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: Georgia, "Merriweather", serif;
+  background:var(--bg);
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.6;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  padding: calc(var(--page-padding));
+}
+
+.site-header, .site-footer{width:100%; max-width:var(--max-width)}
+.title{margin:0; font-size:2rem; letter-spacing: .5px}
+.subtitle{margin:0.3rem 0 1rem; color:var(--muted)}
+
+.chapter-header{width:100%; max-width:var(--max-width); margin-bottom:1rem}
+.home-link{color:var(--accent); text-decoration:none; font-size:0.95rem}
+
+.content, .chapter{width:100%; max-width:var(--max-width); background:transparent}
+.content section{margin-bottom:1.6rem}
+
+article{padding:1rem 0}
+article p{margin:0 0 1rem; font-size:1.05rem; text-indent:1.2em; max-width:100%}
+h1, h2, h3{font-family: Georgia, "Times New Roman", serif; margin:0 0 .5rem}
+
+.chapter-nav, .chapter-nav-bottom{
+  display:flex;
+  gap:1rem;
+  margin-top:0.8rem;
+  flex-wrap:wrap;
+}
+.chapter-nav a, .chapter-nav-bottom a{
+  color:var(--accent);
+  text-decoration:none;
+  font-weight:600;
+}
+
+.site-footer{color:var(--muted); font-size:0.9rem; margin-top:2.2rem}
+
+/* responsive tweaks */
+@media (max-width:640px){
+  :root{--page-padding:1rem}
+  .title{font-size:1.6rem}
+  article p{font-size:1rem}
+}
